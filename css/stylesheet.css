@@ -84,24 +84,47 @@ a{
   border-top: 2px solid black;
   height: 47px;
   border-radius: 0 0 5px 5px;
-  padding-left: 225px;
+  padding-left: 229px;
+}
+
+.menu-item{
+  float: left;
+  position: relative;
+  border-left: 2px solid white;
+  padding: 0 20px;
 }
 
 .menu-item-text{
-  background-color: green;
+  cursor: pointer;
+  padding: 0 20px;
+  line-height: 45px;
+  height: 45px;
+  display: block;
   color: white;
   font-size: 1.6rem;
   font-weight: 700;
   text-shadow: 1px 0 0 #181818,0 1px 0 #181818, -1px 0 0 #181818, 0 -1px 0 #181818;
+
 }
 
+.menu-act .menu-item-text{
+  color: #ff0;
+  border-bottom: 2px solid #181818;
+}
+
+.sub-menu{
+  background-color: skyblue;
+  position: absolute;
+  top: 47px;
+  display: none;
+}
 /* 비주얼 */
 .visual{
   background-color: orangered;
   height: 10vh;
 }
 /* 메인 콘텐츠 */
-.main{
+.main{  
   background-color: blue;
   height: 60vh;
   padding: 0 30px;

@@ -19,6 +19,13 @@
     text-decoration: none;
   }
 
+  .clearfix::after  {
+    content: '';
+    background-color: orange;
+    clear: both;
+    display: block;
+  }
+
   .header, .visual, .main, .slogan, .footer{
     width: 940px;
     margin: 0 auto;
@@ -26,7 +33,9 @@
   }
   .header{
     background-color: #fff;
-    position: relative;/*
+    position: relative;
+    padding: 0 30px;
+    /*
     top: 50px;
     left: 100px;*/
   } 
@@ -39,15 +48,43 @@
   }
   .member{
     background-color:yellow;
-    width: 100px;
-    font-size: 0;
-  }
+    float: right;
+    text-transform: uppercase;
+    padding: 2px 0;
+    position: relative;
+    right: -10px;
+  } 
+
+
   .member li{
-    background-color: pink; 
-    display: inline;
-    font-size: 16px;
+    /*background-color: pink; */
+    float: left;
+  }
+  .member li:nth-child(n+2)::before{
+    content: ':';
   }
 
+  .member a{
+    display: block;
+    background-color: aqua;
+    padding: 20px 10px;
+
+  }
+  .clearfix{
+    background-color: orange;
+    /*clear: both;
+    */
+  }
+
+  .navigation{
+    background-color: yellow;
+    clear: both;
+  }
+
+  .visual{
+    background-color: orangered;
+    clear: both;
+  }
   .group{
     background-color:lightgreen;
 

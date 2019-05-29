@@ -22,16 +22,15 @@ html{
   font-size: 10px;
 }
 body{
-
-  background: url('images/bg_flower.png') no-repeat 50%,
-  #aaa linear-gradient(#aaa 0%, #aaa 30%, #fff 50%, #fff 100%);
+  background: url('images/bg_flower.png') no-repeat 50% 0,
+  #aaa linear-gradient(#aaa 0%,#eee 30%, #fff 50%, rgb(250, 245, 245) 100%);
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
 }
 a{
   color: inherit;
-  text-decoration: none;
+  text-decoration: none;  
 }
 /* 플로트 이슈를 해결하기 위한 클래스 */
 .clearfix::after{
@@ -143,10 +142,33 @@ a{
 .sub-menu a:hover::before{
   content: '\e800';
 }
+
+@keyframes textAni{
+  0%{
+    color: rgba(0,0,0,0);
+    font-size: 12px;
+    transform: translate(0,0);
+  }
+  100%{
+    color: rgba(0,0,0,1);
+    font-size: 24px;
+    transform: translate(400px,75px);
+  }
+}
 /* 비주얼 */
 .visual{
  /* background-color: orangered;*/
   height: 120px;
+  position: relative;
+}
+.visual-text{
+  background-color: yellow;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: textAni;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  max-width: 540px;
 }
 /* 메인 콘텐츠 */
 .main{

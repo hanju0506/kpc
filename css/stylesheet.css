@@ -4,7 +4,7 @@
 @import url('normalize.css');
 @import url('reset.css');
 /* 숨김 콘텐츠 */
-.readable-hidden{
+.readable-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -22,7 +22,7 @@ html{
 }
 body{
   background: url('images/bg_flower.png') no-repeat 50% 0,
-  #aaa linear-gradient(#aaa 0%,#eee 30%, #fff 50%, rgb(250, 245, 245) 100%);
+  #aaa linear-gradient(#aaa 0%,#eee 50%, #fff 70%, rgb(250, 245, 245) 100%);
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -194,15 +194,16 @@ a{
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
-  height: 60vh;
-  padding: 0 30px;
+  background-color: white;
+  border-radius: 15px 15px 0 0;
+  min-height: 450px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .group{
-  background-color: lightgreen;
+  
 }
 .group1{
   width: 250px;
@@ -212,6 +213,68 @@ a{
 }
 .group3{
   width: 190px;
+}
+
+.login{
+  border-radius: 5px;
+  background: #ed552f radial-gradient(circle at right top,#ea782f, #ed522f);
+  box-shadow: 5px 5px 0 0 #aaa;
+  padding: 10px;
+}
+.login-heading{
+  color: #ff0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form{
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset{
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.user-pw{
+  margin-top: 5px;
+}
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+}
+.btn-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ed552f;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0 5px;
+  background-color: #ed552f;
+  font-size: 1.2rem;
+}
+.sign{
+  background-color: #fff;
+  padding: 7px 9px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+.sign .icon-right-open::before{
+  color: #ed552f;
 }
 /* 슬로건 */
 .slogan{

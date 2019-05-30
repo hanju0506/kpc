@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('fontello.css');
+/* @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css'); */
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('normalize.css');
 @import url('reset.css');
@@ -22,7 +23,7 @@ html{
 }
 body{
   background: url('images/bg_flower.png') no-repeat 50% 0,
-  #aaa linear-gradient(#aaa 0%,#eee 50%, #fff 70%, rgb(250, 245, 245) 100%);
+  #aaa linear-gradient(#aaa 0%, #eee 50%, #fff 70%, #fff 100%);
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -74,7 +75,6 @@ a{
   display: inline-block;
   padding: 8px 10px;
 }
-
 /* 메인 메뉴 */
 .navigation{
   clear: both;
@@ -154,10 +154,10 @@ a{
   0%{
     color: rgba(0,0,0,0);
     font-size: 12px;
-    transform: translate(0, 0);
+    transform: translate(0,0);
   }
   100%{
-    color:  rgba(0,0,0,1);
+    color: rgba(0,0,0,1);
     font-size: 24px;
     transform: translate(400px, 75px);
   }
@@ -185,24 +185,22 @@ a{
   url('images/ani_flower_04.png') no-repeat 800px 0;
   animation-delay: 1000ms;
 }
-
 .visual-text{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  animation: textAni 3000ms forwards;
+  animation: textAni 1000ms forwards;
   display: inline-block;
   max-width: 540px;
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: white;
+  background-color: #fff;
   border-radius: 15px 15px 0 0;
   min-height: 450px;
-  padding: 30px 30px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .group1{
   width: 250px;
 }
@@ -224,168 +222,98 @@ a{
   font-size: 1.5rem;
   font-weight: 700;
   text-indent: 10px;
-
 }
-
-.login-form fieldset{
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 10px;
-  
-}
-
-.login-form label{
-  
-  display: inline-block;
-  width: 4em;
-}
-.user-pw{
-  margin-top: 6px;
-  
-}
-
-.login-form input{
-  width: 90px;
-  height: 22px;
-  border: 1px solid #aaa;
-  padding: 1px 1px 1px 5px;
-}
-
-.btn-login{
-  position: absolute;
-  top:0px;
-  right:0px;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ed552f;
-  border-radius: 3px;
-  color: #fff;
-  padding: 0 ;
-  background: #ed552f;
-  font-size: 1.2rem;
-}
-
-
 .login-form{
   margin-top: 10px;
   background: #fff;
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 0 10px;
 }
-
-
+.login-form fieldset{
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.user-pw{
+  margin-top: 6px;
+}
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+}
+.btn-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ed552f;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0;
+  background: #ed552f;
+  font-size: 1.2rem;
+}
 .sign{
   background: #fff;
-  padding: 10px;
+  padding: 7px 9px;
   border-radius: 0 0 5px 5px;
   display: flex;
   justify-content: space-between;
   letter-spacing: -1px;
 }
-
-/* .sign li{
-  letter-spacing: -1px;
-  font-size: 1.3rem;
-} */
-
 .sign .icon-right-open::before{
   color: #ed552f;
+  margin: 0;
 }
 /* 유효성 검사 배너 */
 .validation-list{
   margin-top: 25px;
 }
-
 .validation-list a{
   display: block;
   border: 1px solid #aaa;
   border-radius: 30px;
-  background: url(images/validation_icon.png) no-repeat 10px 50%,
-  linear-gradient(#ccc,#eee); 
+  background: url('images/validation_icon.png') no-repeat 10px 50%,
+  #ccc linear-gradient(#ccc, #eee);
   padding: 5px 15px 5px 35px;
   margin: 10px 0;
 }
 /* 웹 관련 용어 */
 .term{
   margin-top: 20px;
-  border: 1px solid #aaa;
+  border:1px solid #aaa;
   border-radius: 5px;
   background: #ccc linear-gradient(#ccc, #eee);
   padding: 10px 15px;
 }
-
-.term-heading{
+ .term-heading{
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 .term-list{
   margin-top: 10px;
 }
-
 .term-list-subject, .term-list-brief{
-
   float: right;
   width: 145px;
 }
-
-.term-list-thumbnail{
-
-  float: left;
-  position: relative;
-  /* top: 5px; */
-}
-
 .term-list-subject{
   color: #296897;
-    margin-top: -4px;
+  margin-top: -4px;
 }
-
-.term-list-brief{
-  line-height: 1.5;
-  margin-top: 5px;
-}
-
-/* .term{
-  background: yellow;
-  margin-top: 40px;
-  float: left;
-  
-
-}
-
-.term-heading{
-  background: pink;
-  height: 30px;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.term-list{
-  background: lime;
-}
-
-.term-list-subject{
-  margin: 0;
-  float: right;
-  background: orange;
-  color: navy;
-  width: 180px;
-}
-
 .term-list-thumbnail{
   float: left;
-  position: relative;
-  background: red;
 }
-
 .term-list-brief{
-  background: green;
-  float: left;
-  width: 145px;
-  margin: 0 0 10px 10px;
-} */
-
+  margin-top: 5px;
+}
 /* 슬로건 */
 .slogan{
   background-color: pink;

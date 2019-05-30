@@ -197,14 +197,12 @@ a{
   background-color: white;
   border-radius: 15px 15px 0 0;
   min-height: 450px;
-  padding: 30px;
+  padding: 30px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.group{
-  
-}
+
 .group1{
   width: 250px;
 }
@@ -214,10 +212,10 @@ a{
 .group3{
   width: 190px;
 }
-
+/* 로그인 */
 .login{
   border-radius: 5px;
-  background: #ed552f radial-gradient(circle at right top,#ea782f, #ed522f);
+  background: #ed552f radial-gradient(circle at right top,#ea782f, #ed552f);
   box-shadow: 5px 5px 0 0 #aaa;
   padding: 10px;
 }
@@ -226,58 +224,74 @@ a{
   font-size: 1.5rem;
   font-weight: 700;
   text-indent: 10px;
+
 }
 
-.login-form{
-  margin-top: 10px;
-  background-color: #fff;
-  border-radius: 5px 5px 0 0;
-  padding: 10px 10px 0 10px;
-}
 .login-form fieldset{
   position: relative;
   border-bottom: 1px solid #aaa;
   padding-bottom: 10px;
+  
 }
-.user-pw{
-  margin-top: 5px;
-}
+
 .login-form label{
+  
   display: inline-block;
   width: 4em;
 }
+.user-pw{
+  margin-top: 6px;
+  
+}
+
 .login-form input{
   width: 90px;
   height: 22px;
   border: 1px solid #aaa;
   padding: 1px 1px 1px 5px;
 }
+
 .btn-login{
   position: absolute;
-  top: 0;
-  right: 0;
+  top:0px;
+  right:0px;
   width: 50px;
   height: 50px;
   border: 1px solid #ed552f;
   border-radius: 3px;
   color: #fff;
-  padding: 0 5px;
-  background-color: #ed552f;
+  padding: 0 ;
+  background: #ed552f;
   font-size: 1.2rem;
 }
+
+
+.login-form{
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+
 .sign{
-  background-color: #fff;
-  padding: 7px 9px;
+  background: #fff;
+  padding: 10px;
   border-radius: 0 0 5px 5px;
   display: flex;
   justify-content: space-between;
   letter-spacing: -1px;
 }
+
+/* .sign li{
+  letter-spacing: -1px;
+  font-size: 1.3rem;
+} */
+
 .sign .icon-right-open::before{
   color: #ed552f;
 }
-
-/*유효성 검사 배너*/
+/* 유효성 검사 배너 */
 .validation-list{
   margin-top: 25px;
 }
@@ -286,12 +300,92 @@ a{
   display: block;
   border: 1px solid #aaa;
   border-radius: 30px;
-  background: url('images/validation_icon.png') no-repeat 10px 50%,
-  #ccc  linear-gradient(#ccc, #eee);
+  background: url(images/validation_icon.png) no-repeat 10px 50%,
+  linear-gradient(#ccc,#eee); 
   padding: 5px 15px 5px 35px;
   margin: 10px 0;
+}
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+}
+
+.term-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list{
+  margin-top: 10px;
+}
+
+.term-list-subject, .term-list-brief{
+
+  float: right;
+  width: 145px;
+}
+
+.term-list-thumbnail{
+
+  float: left;
+  position: relative;
+  /* top: 5px; */
+}
+
+.term-list-subject{
+  color: #296897;
+    margin-top: -4px;
+}
+
+.term-list-brief{
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* .term{
+  background: yellow;
+  margin-top: 40px;
+  float: left;
+  
 
 }
+
+.term-heading{
+  background: pink;
+  height: 30px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.term-list{
+  background: lime;
+}
+
+.term-list-subject{
+  margin: 0;
+  float: right;
+  background: orange;
+  color: navy;
+  width: 180px;
+}
+
+.term-list-thumbnail{
+  float: left;
+  position: relative;
+  background: red;
+}
+
+.term-list-brief{
+  background: green;
+  float: left;
+  width: 145px;
+  margin: 0 0 10px 10px;
+} */
+
 /* 슬로건 */
 .slogan{
   background-color: pink;
